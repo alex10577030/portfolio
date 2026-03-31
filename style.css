@@ -1,0 +1,156 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #811901233#;
+    color: Blue;
+    padding: 20px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: Brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+#hero {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #eee;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Dark mode */
+.dark {
+    background: #111;
+    color: #fff;
+}
+
+.dark header {
+    background: #000;
+}
+
+.dark .project-card {
+    background: #222;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
